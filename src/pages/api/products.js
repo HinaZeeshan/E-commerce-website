@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-  try {
+  
     const products = [
       // Your product list
 
@@ -44,10 +44,8 @@ export default function handler(req, res) {
       },
     ];
     res.status(200).json(products);
-  } catch (error) {
-    res.status(500).json({ error: "Internal Server Error" });
-  }
-}
+  } 
+
 
 
 
